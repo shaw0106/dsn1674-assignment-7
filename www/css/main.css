@@ -5,6 +5,8 @@ html{
   padding:0em;
   box-sizing:border-box;
   background-color:none;
+  background-image: url("../img/background.jpg");
+  background-repeat: repeat;
 
 }
 
@@ -20,8 +22,6 @@ body {
 
 /*Header*/
 header {
-    background-image: url("/img/background.jpg");
-    background-repeat: repeat;
     display:block;
   }
 
@@ -70,22 +70,28 @@ nav{
 nav ul {
   list-style:none;
   margin:0em;
-  padding:1em 0em 1em 0em;
+  padding:0em;
   display:block;
-  font-size:1rem;
-  font-weight:bold;
 }
 
 nav li {
   display:inline-block;
-  margin:0em 0.5em 0em 0.5em;
+  margin:0em;
   padding:0em 0.5em 0em 0.5em;
   font-size:1.5em;
 }
 
 nav a {
   color: #fff;
-  border-radius:4px;
+  display:inline-block;
+  margin:0em;
+  padding:1em 1em 1em 1em;
+  font-size:1em;
+}
+
+a:hover {
+  color:white;
+  background-color: #785439;
 }
 
 /*body*/
@@ -130,7 +136,7 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("/img/ant-nest.jpg");
+  background-image:url("../img/ant-nest.jpg");
   background-repeat:no-repeat;
 }
 
@@ -148,7 +154,7 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("/img/stag.jpg");
+  background-image:url("../img/stag.jpg");
   background-repeat:no-repeat;
 }
 
@@ -166,7 +172,7 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("/img/dung.jpg");
+  background-image:url("../img/dung.jpg");
   background-repeat:no-repeat;
 }
 
@@ -185,7 +191,7 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("/img/tortoise.jpg");
+  background-image:url("../img/tortoise.jpg");
   background-repeat:no-repeat;
 }
 
