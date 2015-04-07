@@ -1,8 +1,8 @@
 /*html*/
 html{
   font-family: 'Dosis', sans-serif;
-  margin:0em;
-  padding:0em;
+  margin:0em 0em 0em 0em;
+  padding:0em 0em 0em 0em;
   box-sizing:border-box;
   background-color:none;
   background-image: url("../img/background.jpg");
@@ -27,7 +27,7 @@ header {
 
 .beetle-left {
     float:left;
-    width:10%;
+    width:15%;
     margin:0em;
     padding:0em;
     border:2em;
@@ -36,7 +36,7 @@ header {
 .beetle-right{
     float:right;
     /*clear:right;*/
-    width:10%;
+    width:15%;
     margin:0em;
     padding:0em;
     border:2em;
@@ -53,7 +53,7 @@ h1 {
 /*h2*/
 h2 {
   text-align:center;
-  font-size:1.75rem;
+  font-size:1rem;
   position:absolute;
   bottom:1em;
   color:white;
@@ -63,22 +63,24 @@ h2 {
 
 /*Nav*/
 nav{
-  background-color:#9a816d;
+  background-color:#a08774;
   text-align:center;
+  opacity: 0.5;
+  clear:both;
 }
 
 nav ul {
   list-style:none;
   margin:0em;
   padding:0em;
-  display:block;
+  display:inline-block;
 }
 
 nav li {
   display:inline-block;
   margin:0em;
   padding:0em 0.5em 0em 0.5em;
-  font-size:1.5em;
+  font-size:1.20em;
 }
 
 nav a {
@@ -87,11 +89,12 @@ nav a {
   margin:0em;
   padding:1em 1em 1em 1em;
   font-size:1em;
+  text-decoration:none;
 }
 
 a:hover {
   color:white;
-  background-color: #785439;
+  background-color: #583c29;
 }
 
 /*body*/
@@ -136,8 +139,6 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("../img/ant-nest.jpg");
-  background-repeat:no-repeat;
 }
 
 .ant-nest {
@@ -154,8 +155,6 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("../img/stag.jpg");
-  background-repeat:no-repeat;
 }
 
 .stag {
@@ -172,8 +171,6 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("../img/dung.jpg");
-  background-repeat:no-repeat;
 }
 
 .dung {
@@ -191,8 +188,6 @@ p {
   border:2em;
   width:50%;
   display:block;
-  background-image:url("../img/tortoise.jpg");
-  background-repeat:no-repeat;
 }
 
 .tortoise {
@@ -203,14 +198,22 @@ p {
 
 /*footer*/
 
+footer {
+  width:100%;
+}
+
 .logobottomimg {
   margin:0em;
   padding:0em;
   border:0em;
   width:10%;
   display:block;
-
-.logobottom {
-
+  background-color:#a08774;
 }
+
+.logob {
+  margin:0em;
+  padding:0em;
+  opacity: 0.5;
+
 }
