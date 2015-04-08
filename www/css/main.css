@@ -5,7 +5,6 @@ html{
   padding:0em 0em 0em 0em;
   box-sizing:border-box;
   background-color:none;
-
 }
 
 *,*::before, *::after{
@@ -19,28 +18,23 @@ body {
 }
 
 /*Header*/
+
 header {
-    display:block;
-    background-image: url("../img/background.jpg");
-    background-repeat: repeat;
-  }
+  background-image: url("../img/background.jpg");
+}
 
-.beetle-left {
-    float:left;
-    width:14%;
-    margin:0em;
-    padding:0em;
-    border:2em;
-  }
-
-.beetle-right{
-    float:right;
-    /*clear:right;*/
-    width:14%;
-    margin:0em;
-    padding:0em;
-    border:2em;
-  }
+h1 {
+  background-image: url("../img/beetle-logo.svg"), url("../img/beetle-logo.svg");
+  background-repeat: no-repeat;
+  background-position:left, right;
+  background-size: 1em auto, 1em auto;
+  color: #512200;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 3em;
+}
 
 /*h1*/
 h1 {
@@ -51,24 +45,24 @@ h1 {
 }
 
 /*h2*/
-h2 {
-  /*background-image: url("../img/rocks.jpg");*/
+.rocks h2 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.6));
   text-align:center;
-  font-size:1rem;
-  position:absolute;
-  bottom:1em;
+  font-size:1.5rem;
+  padding-top:7em;
   color:white;
   width:100%;
-  display:inline;
-  margin:0em;
+  margin:0;
   padding-bottom:2em;
-  background-image: linear-gradient(to bottom, transparent, black);
 }
 
-h3 {
+.rocks {
   background-image: url("../img/rocks.jpg");
   padding-top: 10em;
-  margin:0em;
+  margin:0;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*Nav*/
@@ -83,15 +77,21 @@ nav ul {
   list-style:none;
   margin:0em;
   padding:0em;
-  display:inline-block;
+  display:inline;
+  width:100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-nav li {
-  display:inline-block;
-  margin:0em;
-  padding:0em 0.5em 0em 0.5em;
+nav ul li {
+  display:inline;
+  margin:0;
+  padding: 0.5em;
   font-size:1.5em;
   float:left;
+  width:25%;
+  box-sizing:border-box;
+  text-align:center;
 }
 
 nav a {
@@ -108,144 +108,45 @@ a:hover {
   background-color: #583c29;
 }
 
-/*body*/
-p {
-  text-align:center;
-  float:left;
-  margin:0em;
-  font-size:0.5rem;
-  position:absolute;
-  bottom:1em;
-  color:black;
-  width:100%;
+/*main*/
+.main  {
+	width: 100%;
+	position:relatives;
 }
 
-/*all img*/
-
-
-/*rocks*/
-.rocks {
-  background-image: url("../img/rocks.jpg");
-  background-image: linear-gradient(to bottom, transparent, black);
-  /*clear:both;*/
-  width: 100%;
-  display: block;
-  position: relative;
+figure{
+	width: 50%;
+	float: left;
+	display: block;
+	background-color: green;
+	margin: 0;
+	position: relative;
 }
 
-/*ant nest*/
-.ant-nestimg {
-  float:left;
-  margin:0em;
-  padding:0em;
-  width:50%;
-  position:relative;
+figure img{
+	width: 100%;
+	display:block;
 }
 
-.antfig{
-  text-align: center;
-  color:white;
-  background-color: green;
-  border-radius: 20px;
-  padding: 0.5em 2em 0.5em 2em;
-  box-shadow:2px 2px 1px rgba(0,0,0,0.5);
-  background: linear-gradient(to bottom, #6dbd00, #3d8800);
-  font-size:1em;
-  position: absolute;
-  font-weight:300;
-  float:left;
-  clear:both;
-  width:50%
-  }
-
-/*stag*/
-.stagimg {
-  float:right;
-  margin:0em;
-  padding:0em;
-  border:2em;
-  width:50%;
-  position:relative;
+figcaption{
+	display: block;
+	position: absolute;
+	width: 60%;
+  background-color: #388200;
+  bottom: 1em;
+	left: 25%;
+	text-align: center;
+	color: #fff;
+	font-size: 1em;
+	background-image: linear-gradient(to bottom, #6fc000, #388200);
+	padding: 0.5em;
+	border-radius:20px;
 }
 
-.stagfig {
-  text-align: center;
-  color:white;
-  background-color: green;
-  border-radius: 20px;
-  padding: 0.5em 2em 0.5em 2em;
-  box-shadow:2px 2px 1px rgba(0,0,0,0.5);
-  background: linear-gradient(to bottom, #6dbd00, #3d8800);
-  font-size:1em;
-  position: absolute;
-  font-weight:300;
-  float:right;
-  clear:both;
+a:hover figcaption{
+    	background-color: #388200;
+    	background-image: linear-gradient(to bottom, #388200, #214d00);
 }
-
-/*dung*/
-.dungimg {
-  float:left;
-  margin:0em;
-  padding:0em;
-  border:2em;
-  width:50%;
-  position:relative;
-}
-
-.dungfig {
-  text-align: center;
-  color:white;
-  background-color: green;
-  border-radius: 20px;
-  padding: 0.5em 2em 0.5em 2em;
-  box-shadow:2px 2px 1px rgba(0,0,0,0.5);
-  background: linear-gradient(to bottom, #6dbd00, #3d8800);
-  font-size:1em;
-  position: absolute;
-  font-weight:300;
-  float:left;
-  clear:both;
-}
-
-/*tortoise*/
-.tortoiseimg {
-  float:right;
-  margin:0em;
-  padding:0em;
-  border:2em;
-  width:50%;
-  position:relative;
-}
-
-.tortfig {
-  text-align: center;
-  color:white;
-  background-color: green;
-  border-radius: 20px;
-  padding: 0.5em 2em 0.5em 2em;
-  box-shadow:2px 2px 1px rgba(0,0,0,0.5);
-  background: linear-gradient(to bottom, #6dbd00, #3d8800);
-  font-size:1em;
-  position: absolute;
-  font-weight:300;
-  float:right;
-  clear:both;
-
-}
-
-/*figcaption {
-  text-align: center;
-  color:white;
-  background-color: green;
-  border-radius: 20px;
-  padding: 0.5em 2em 0.5em 2em;
-  box-shadow:2px 2px 1px rgba(0,0,0,0.5);
-  background: linear-gradient(to bottom, #6dbd00, #3d8800);
-  font-size:1em;
-  position: absolute;
-  font-weight:300;
-}*/
 
 /*footer*/
 footer {
